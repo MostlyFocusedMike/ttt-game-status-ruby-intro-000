@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
   
+<<<<<<< HEAD
 def won?(b) # b short for board
   WIN_COMBINATIONS.find do |win|
     # board[0..1]
@@ -40,3 +41,11 @@ end
 def winner(board)
   return board[won?(board)[0]] if won?(board)
 end
+=======
+def won?(board)
+  WIN_COMBINATIONS.any? do |win|
+  #   
+    binding.pry
+  end
+end
+>>>>>>> a8b8a43b8d35562196b495676602892e1dd95056
